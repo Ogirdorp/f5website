@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="4346.666 14059.98 80 21.138">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #39dbfa;
+      }
+
+      .cls-2 {
+        fill: #313131;
+      }
+    </style>
+  </defs>
+  <g id="FiveFifth_LogoBB" transform="translate(4346.666 14059.98)">
+    <g id="Layer_1" data-name="Layer 1">
+      <path id="Path_39" data-name="Path 39" class="cls-1" d="M117.022,0V2.716H109.7V5.734H106.95V0Z" transform="translate(-39.707)"/>
+      <path id="Path_40" data-name="Path 40" class="cls-2" d="M2.748,21.138H0V0H10.06V2.729H2.748V8.67H7.306l-.968,2.647H2.748Z"/>
+      <path id="Path_41" data-name="Path 41" class="cls-2" d="M25.519,21.138H22.746V2.666L20.86,2.609V0h4.678Z" transform="translate(-7.745)"/>
+      <path id="Path_42" data-name="Path 42" class="cls-2" d="M44.663,21.138H41.312L35.76,0h3.075l4.137,16.158L47.046,0h3.144Z" transform="translate(-13.277)"/>
+      <path id="Path_43" data-name="Path 43" class="cls-2" d="M74.242,21.138H64.22V0H74.28V2.729H66.968V8.67h4.709l-.817,2.647H66.968v7.344h7.274Z" transform="translate(-23.843)"/>
+      <path id="Path_44" data-name="Path 44" class="cls-2" d="M95.617,0h-2.49L85.74,21.125h2.49Z" transform="translate(-31.832)"/>
+      <path id="Path_45" data-name="Path 45" class="cls-1" d="M115,9.12v3.364a4.338,4.338,0,1,1,0,8.67v3.357A7.7,7.7,0,1,0,115,9.12Z" transform="translate(-42.696 -3.386)"/>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,114 @@
+@import url("navcss.css");
+@import url("fonts.css");
+@import url("https://fonts.googleapis.com/css?family=Lato:100,700");
+@import url("https://fonts.googleapis.com/css?family=IBM+Plex+Sans+Condensed");
+/*
+  Import any other elements up top
+
+*/
+
+body {
+  -webkit-text-size-adjust: none;
+}
+
+.banner {
+  display: flex;
+  height: auto;
+  width: 100%;
+  max-width: 1200px;
+}
+
+#intro {
+  display: flex;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.first, .middle, .last {
+  font-family: 'akrobat';
+  max-width: 350px;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 20px;
+  flex-grow: 0;
+  color: #313131;
+}
+
+footer {
+  width: auto;
+}
+
+h2 {
+  font-size: 2em;
+}
+
+p {
+  font-size: 1.5em;
+  font-family: 'IBM Plex Sans Condensed', sans-serif;
+}
+
+.hero {
+  font-family: 'akrobat';
+  font-size: 4em;
+  color: #313131;
+  margin: 40vh auto 0 auto;
+  position: relative;
+  height: 100vh;
+  padding-left: 73px;
+  text-align: left;
+}
+
+.circle, .circle2 {
+  height: 50px;
+  width: 50px;
+  background-color: #39DBFA;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.circle2 {
+  background-color: #82F927;
+}
+
+.square {
+  height: 50px;
+  width: 50px;
+  background-color: #FF2D5E;
+  margin-bottom: 10px;
+  border-radius: 15%;
+}
+
+.banimg {
+  width: 300px;
+  margin-bottom: 40px;
+}
+
+/*
+-----------------------------------
+<!--RESPONSIVE BIT BY OGIRDOR
+-----------------------------------
+*/
+
+@media (max-width: 490px) {
+  #intro {
+    flex-direction: column;
+    max-width: 760px;
+  }
+}
+
+@media (max-width: 720px) {
+  h1 {
+    font-size: 2em;
+    max-width: 720px;
+    padding-left: 20px;
+    margin: 40vh auto 0 auto;
+    height: 60vh;
+  }
+}
+
+@media (max-width: 720px) {
+  .banimg {
+    width: 180px;
+  }
+}
