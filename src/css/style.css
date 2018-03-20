@@ -1,21 +1,39 @@
 @import url("navcss.css");
 @import url("fonts.css");
-@import url("https://fonts.googleapis.com/css?family=Lato:100,700");
-@import url("https://fonts.googleapis.com/css?family=IBM+Plex+Sans+Condensed");
+@import url("animation.css");
 /*
   Import any other elements up top
 
 */
 
+a {
+  text-decoration: none;
+}
+
 body {
   -webkit-text-size-adjust: none;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: bold;
+}
+
+#menu {
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: bold;
+  font-size: 14px;
 }
 
 .banner {
   display: flex;
-  height: auto;
+  height: 600px;
   width: 100%;
   max-width: 1200px;
+}
+
+.mouse {
+  display: flex;
+  height: 200px;
+  width: 100%;
+  margin-bottom: 20vh;
 }
 
 #intro {
@@ -26,7 +44,7 @@ body {
 }
 
 .first, .middle, .last {
-  font-family: 'akrobat';
+  font-family: 'Josefin Sans', sans-serif;
   max-width: 350px;
   margin-right: auto;
   margin-left: auto;
@@ -35,29 +53,65 @@ body {
   color: #313131;
 }
 
+.middle {
+  margin-top: 60px;
+}
+
+.last {
+  margin-top: 120px;
+}
+
 footer {
   width: auto;
+  height: 300px;
+  background-color: #FF2D5E;
 }
 
 h2 {
-  font-size: 2em;
+  padding-top: 14px;
+  font-size: 1.75em;
+  font-weight: bolder;
 }
 
 p {
-  font-size: 1.5em;
-  font-family: 'IBM Plex Sans Condensed', sans-serif;
+  font-size: 1.25em;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: normal;
+  padding-top: 14px;
 }
 
 .hero {
-  font-family: 'akrobat';
-  font-size: 4em;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: bold;
+  font-size: 3.25em;
   color: #313131;
-  margin: 40vh auto 0 auto;
-  position: relative;
-  height: 100vh;
-  padding-left: 73px;
-  text-align: left;
+  margin: auto;
+  margin-top: 40vh;
+  padding-left: 40px;
+  padding-right: 40px;
+  z-index: 0;
 }
+
+.intro_contact {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 200px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  flex-direction: column;
+  width: auto;
+  text-align: center;
+  height: 200px;
+  display: flex;
+  font-size: 2em;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: bold;
+  vertical-align: baseline;
+  background: transparent;
+  color: #313131;
+}
+
+/* SHAPES AND OTHER ELEMENTS */
 
 .circle, .circle2 {
   height: 50px;
@@ -81,7 +135,65 @@ p {
 
 .banimg {
   width: 300px;
+  margin-top: 20px;
   margin-bottom: 40px;
+}
+
+.shape {
+  height: 300px;
+  width: 300px;
+  background-color: #39DBFA;
+  border-radius: 5%;
+}
+
+.shape2 {
+  height: 300px;
+  width: 300px;
+  background-color: #67E7FF;
+  border-radius: 5%;
+}
+
+/* Scroll mouse animation CSS */
+
+.scroll-downs {
+  margin: auto;
+  width: 34px;
+  height: 55px;
+}
+
+.mousey {
+  width: 3px;
+  padding: 10px 15px;
+  height: 35px;
+  border: 2px solid #000;
+  border-radius: 25px;
+  opacity: 0.75;
+  box-sizing: content-box;
+}
+
+.scroller {
+  width: 3px;
+  height: 10px;
+  border-radius: 25%;
+  background-color: #000;
+  animation-name: scroll;
+  animation-duration: 2.2s;
+  animation-timing-function: cubic-bezier(.15, .41, .69, .94);
+  animation-iteration-count: infinite;
+}
+
+@keyframes scroll {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(15px);
+    opacity: 0;
+  }
 }
 
 /*
@@ -90,7 +202,7 @@ p {
 -----------------------------------
 */
 
-@media (max-width: 490px) {
+@media (max-width: 1040px) {
   #intro {
     flex-direction: column;
     max-width: 760px;
@@ -98,17 +210,42 @@ p {
 }
 
 @media (max-width: 720px) {
-  h1 {
+  .hero {
     font-size: 2em;
     max-width: 720px;
     padding-left: 20px;
-    margin: 40vh auto 0 auto;
-    height: 60vh;
+    padding-bottom: 40px;
+    margin: auto;
+    margin-top: 25vh;
   }
 }
 
 @media (max-width: 720px) {
   .banimg {
     width: 180px;
+  }
+}
+
+@media (max-width: 720px) {
+  .scroll-downs {
+    display: none;
+  }
+}
+
+@media (max-width: 830px) {
+  .mouse {
+    display: none;
+  }
+}
+
+@media (max-width: 720px) {
+  .first, .middle, .last {
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 960px) {
+  .first, .middle, .last {
+    margin-top: 20px;
   }
 }

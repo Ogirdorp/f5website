@@ -5,10 +5,22 @@
   padding: 0;
 }
 
-a {
-  color: #fff;
+.a {
+  color: #313131;
   font-family: 'Anton', sans-serif;
   font-size: 2em;
+  text-decoration: none;
+}
+
+a:link {
+  color: #313131;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #313131;
+  background-color: transparent;
   text-decoration: none;
 }
 
@@ -146,7 +158,7 @@ a {
                     Mobile Menu Menu Icon
   ======================================================*/
 
-@media(max-width: 528px) {
+@media(max-width: 604px) {
   .menuIcon {
     cursor: pointer;
     display: block;
@@ -319,7 +331,7 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
-  position: absolute;
+  position: fixed;
   top: 0;
   right: 0;
   padding-right: 15px;
@@ -342,8 +354,10 @@ a {
   letter-spacing: 4px;
   /*   opacity: 0; */
   padding: 10px 0;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: bolder;
   text-align: right;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   -webkit-transition: color 0.3s ease;
   transition: color 0.3s ease;
   /*   -webkit-transition: 0.2s opacity 0.2s ease-out;
