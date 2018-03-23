@@ -6,14 +6,28 @@
 
 */
 
+*, ::before, ::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
 a {
   text-decoration: none;
 }
 
 body {
   -webkit-text-size-adjust: none;
+  position: relative;
   font-family: 'Josefin Sans', sans-serif;
   font-weight: bold;
+}
+
+main {
+  width: 80%;
+  margin: 0 auto 12rem;
+  overflow: hidden;
+  margin-top: 12%;
 }
 
 #menu {
@@ -22,28 +36,69 @@ body {
   font-size: 14px;
 }
 
-.banner {
+.banner_intro {
   display: flex;
-  height: 600px;
+  width: 100%;
+  position: relative;
+}
+
+.marginb-20rem {
+  padding-bottom: 5rem;
+}
+
+.banner_title {
+  font-size: 2.8rem;
+  color: #313131;
+  z-index: 1;
+}
+
+.banimg {
+  width: 30%;
+  display: block;
+  margin-top: 1rem;
+}
+
+.servicesbanner {
+  display: flex;
+  height: 800px;
   width: 100%;
   max-width: 1200px;
 }
 
 .mouse {
-  display: flex;
-  height: 200px;
   width: 100%;
-  margin-bottom: 20vh;
+  margin-bottom: 5rem;
 }
 
 #intro {
   display: flex;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#sxcontainer {
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
 }
 
+.sxcontent {
+  display: flex;
+  flex-direction: row;
+}
+
 .first, .middle, .last {
+  font-family: 'Josefin Sans', sans-serif;
+  width: 25%;
+  padding: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  flex-grow: 0;
+  color: #313131;
+}
+
+.sx1, .sx2 {
   font-family: 'Josefin Sans', sans-serif;
   max-width: 350px;
   margin-right: auto;
@@ -53,39 +108,61 @@ body {
   color: #313131;
 }
 
+.skills {
+  margin-top: 20px;
+  font-weight: 300;
+  font-size: 1.3em;
+  line-height: 2;
+}
+
+.first {
+  color: #39DBFA;
+}
+
 .middle {
   margin-top: 60px;
+  color: #FF2D5E;
 }
+
+/* .sx2 {
+  color: #FF2D5E;
+} */
 
 .last {
   margin-top: 120px;
+  color: #82F927;
 }
 
 footer {
-  width: auto;
+  width: 100%;
   height: 300px;
   background-color: #FF2D5E;
 }
 
+h1 {
+  font-size: 6rem;
+}
+
 h2 {
   padding-top: 14px;
-  font-size: 1.75em;
+  font-size: 1.75rem;
   font-weight: bolder;
 }
 
 p {
-  font-size: 1.25em;
+  font-size: 1.3em;
   font-family: 'Josefin Sans', sans-serif;
-  font-weight: normal;
+  font-weight: 300;
   padding-top: 14px;
+  color: #313131;
+  /* text-transform: uppercase; */
 }
 
-.hero {
+.hero2 {
   font-family: 'Josefin Sans', sans-serif;
   font-weight: bold;
   font-size: 3.25em;
   color: #313131;
-  margin: auto;
   margin-top: 40vh;
   padding-left: 40px;
   padding-right: 40px;
@@ -99,7 +176,8 @@ p {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   flex-direction: column;
-  width: auto;
+  width: 100%;
+  padding: 20px;
   text-align: center;
   height: 200px;
   display: flex;
@@ -111,7 +189,123 @@ p {
   color: #313131;
 }
 
-/* SHAPES AND OTHER ELEMENTS */
+.footer_main {
+  display: flex;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 80px;
+  padding-right: 80px;
+}
+
+.footer_1, .footer_2 {
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: normal;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 20px;
+  padding: 40px;
+  flex-grow: 0;
+  color: #fff;
+  flex-direction: column;
+}
+
+.footer_1 {
+  max-width: 400px;
+}
+
+.footer_2 {
+  max-width: 600px;
+}
+
+.hire, .hire2 {
+  text-align: left;
+}
+
+.hire {
+  font-size: 2.2em;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.hire2 {
+  font-size: 1.15em;
+  font-weight: normal;
+}
+
+.hire2:hover {
+  text-decoration: underline;
+  text-decoration-color: #313131;
+}
+
+.end {
+  margin-top: 20px;
+  font-size: 0.5em;
+  font-weight: normal;
+}
+
+.directions {
+  position: relative; //display:block;
+  height: 30px;
+  width: 150px;
+  padding: 5px 5px;
+  margin-top: 14px;
+  font-weight: normal;
+  font-size: 0.5em;
+  letter-spacing: 1px;
+  color: #383736;
+  border: 2px #383736 solid;
+  border-radius: 4px;
+  outline: 0;
+  overflow: hidden;
+  background: none;
+  z-index: 0;
+  cursor: pointer;
+  transition: 0.08s ease-in;
+  -o-transition: 0.08s ease-in;
+  -ms-transition: 0.08s ease-in;
+  -moz-transition: 0.08s ease-in;
+  -webkit-transition: 0.08s ease-in;
+  /* font-style: 'Josefin Sans', sans-serif;
+  font-weight: normal; */
+}
+
+.directions:hover {
+  color: whitesmoke;
+  background-color: #fff;
+}
+
+.directions:before {
+  content: "";
+  position: absolute;
+  background: #313131;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 100%;
+  z-index: -1;
+  -webkit-transition: top 0.09s ease-in;
+}
+
+.directions:hover:before {
+  top: 0;
+}
+
+.locale {
+  font-size: 2em;
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+
+.lcx_locale {
+  font-size: 1.5em;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+/* -------------------------------
+SHAPES AND OTHER ELEMENTS
+--------------------------------- */
 
 .circle, .circle2 {
   height: 50px;
@@ -133,16 +327,10 @@ p {
   border-radius: 15%;
 }
 
-.banimg {
-  width: 300px;
-  margin-top: 20px;
-  margin-bottom: 40px;
-}
-
 .shape {
   height: 300px;
   width: 300px;
-  background-color: #39DBFA;
+  background: #39DBFA;
   border-radius: 5%;
 }
 
@@ -150,6 +338,20 @@ p {
   height: 300px;
   width: 300px;
   background-color: #67E7FF;
+  border-radius: 5%;
+}
+
+.shape3 {
+  height: 250px;
+  width: 250px;
+  background-color: #FF2D5E;
+  border-radius: 5%;
+}
+
+.shape4 {
+  height: 250px;
+  width: 250px;
+  background-color: #FF537B;
   border-radius: 5%;
 }
 
@@ -205,18 +407,33 @@ p {
 @media (max-width: 1040px) {
   #intro {
     flex-direction: column;
-    max-width: 760px;
+  }
+  .sxcontent {
+    flex-direction: column;
+    max-width: 720px;
   }
 }
 
 @media (max-width: 720px) {
-  .hero {
+  .hero, .hero2 {
     font-size: 2em;
     max-width: 720px;
     padding-left: 20px;
     padding-bottom: 40px;
     margin: auto;
     margin-top: 25vh;
+  }
+}
+
+@media (max-width: 720px) {
+  .servicesbanner {
+    height: 600px;
+  }
+}
+
+@media (max-width: 720px) {
+  .shape, .shape2 {
+    display: none;
   }
 }
 
@@ -238,14 +455,40 @@ p {
   }
 }
 
-@media (max-width: 720px) {
+@media (max-width: 1040px) {
   .first, .middle, .last {
     margin-top: 20px;
+    width: 60%;
   }
-}
-
-@media (max-width: 960px) {
-  .first, .middle, .last {
-    margin-top: 20px;
+  @media (max-width: 720px) {
+    .first, .middle, .last {
+      margin-top: 20px;
+      width: 60%;
+    }
+    .info_ctn {
+      font-size: 1rem;
+    }
   }
-}
+  @media (max-width: 960px) {
+    .first, .middle, .last {
+      margin-top: 20px;
+    }
+  }
+  @media (max-width: 640px) {
+    .footer_main {
+      height: 100%;
+      flex-direction: column-reverse;
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+  }
+  @media (max-width: 640px) {
+    .hire, .hire2 {
+      text-align: left;
+    }
+  }
+  @media (max-width: 640px) {
+    .intro_contact {
+      font-size: 1.5em;
+    }
+  }
