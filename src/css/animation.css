@@ -78,10 +78,51 @@
   -moz-animation: spin 10s linear infinite;
   animation: spin 10s linear infinite;
   position: absolute;
+  left: 0;
   z-index: -1;
 }
 
 .shape4 {
+  margin: 30px 0 0 -170px;
+  -webkit-animation: spin 10s linear infinite;
+  -moz-animation: spin 10s linear infinite;
+  animation: spin 10s linear infinite;
+  position: absolute;
+  left: 0;
+  z-index: -2;
+}
+
+.shape5 {
+  margin: -60px 0 0 -170px;
+  -webkit-animation: spin 10s linear infinite;
+  -moz-animation: spin 10s linear infinite;
+  animation: spin 10s linear infinite;
+  position: absolute;
+  left: 0;
+  z-index: -1;
+}
+
+.shape6 {
+  margin: 30px 0 0 -170px;
+  -webkit-animation: spin 10s linear infinite;
+  -moz-animation: spin 10s linear infinite;
+  animation: spin 10s linear infinite;
+  position: absolute;
+  left: 0;
+  z-index: -2;
+}
+
+.shape7 {
+  margin: -60px 0 0 -170px;
+  -webkit-animation: spin 10s linear infinite;
+  -moz-animation: spin 10s linear infinite;
+  animation: spin 10s linear infinite;
+  position: absolute;
+  left: 0;
+  z-index: -1;
+}
+
+.shape8 {
   margin: 30px 0 0 -170px;
   -webkit-animation: spin 10s linear infinite;
   -moz-animation: spin 10s linear infinite;

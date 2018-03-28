@@ -19,13 +19,14 @@ a {
 body {
   -webkit-text-size-adjust: none;
   position: relative;
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: 'Roboto Condensed', sans-serif;
   font-weight: bold;
+  color: #313131;
 }
 
 main {
   width: 80%;
-  margin: 0 auto 12rem;
+  margin: 0 auto 10rem;
   overflow: hidden;
   margin-top: 12%;
 }
@@ -36,20 +37,67 @@ main {
   font-size: 14px;
 }
 
+h1 {
+  font-size: 5rem;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+h2 {
+  padding-top: 14px;
+  font-size: 1.75rem;
+  font-weight: bolder;
+}
+
+h3 {
+  font-size: 2rem;
+}
+
+.abt_title {
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 3.1rem;
+  font-weight: 300;
+}
+
+p {
+  font-size: 1.3em;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-weight: 300;
+  padding-top: 14px;
+  color: #8B8B8B;
+  /* text-transform: uppercase; */
+}
+
+.small_caps_header {
+  font-size: 0.8rem;
+  font-weight: 300;
+  margin-bottom: 0.2rem;
+}
+
+/* -------------------------------
+HOME CSS ONLY
+------------------------------- */
+
 .banner_intro {
   display: flex;
   width: 100%;
   position: relative;
+  border-bottom: dashed;
+  border-width: thin;
+  margin-bottom: 10%;
 }
 
 .marginb-20rem {
   padding-bottom: 5rem;
 }
 
+.marginc-5rem {
+  padding-bottom: 5rem;
+}
+
 .banner_title {
-  font-size: 2.8rem;
+  font-size: 2.4rem;
   color: #313131;
-  z-index: 1;
+  z-index: 1
 }
 
 .banimg {
@@ -58,16 +106,10 @@ main {
   margin-top: 1rem;
 }
 
-.servicesbanner {
-  display: flex;
-  height: 800px;
-  width: 100%;
-  max-width: 1200px;
-}
-
 .mouse {
   width: 100%;
-  margin-bottom: 5rem;
+  padding-top: 20px;
+  margin: 0 auto 5rem;
 }
 
 #intro {
@@ -77,85 +119,115 @@ main {
   margin-right: auto;
 }
 
-#sxcontainer {
-  max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
+.unsplash {
+  position: relative;
+  text-align: center;
+  color: white;
 }
 
-.sxcontent {
-  display: flex;
-  flex-direction: row;
+.unsplash_image {
+  width: 100%;
+}
+
+.unsplash_title {
+  color: #fff;
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, 0%);
+}
+
+.unsplash_h1 {
+  font-size: 3rem;
+}
+
+.unsplash_p {
+  font-size: 2rem;
+  color: #fff;
+}
+
+.info_main {
+  margin-bottom: 10rem;
+  border-bottom: dashed;
+  border-width: thin;
 }
 
 .first, .middle, .last {
-  font-family: 'Josefin Sans', sans-serif;
-  width: 25%;
-  padding: 20px;
+  font-family: 'Roboto Condensed', sans-serif;
+  width: 20%;
+  padding-right: 50px;
+  margin-bottom: 5rem;
   margin-left: auto;
   margin-right: auto;
-  flex-grow: 0;
+  flex-grow: 3;
   color: #313131;
 }
 
-.sx1, .sx2 {
-  font-family: 'Josefin Sans', sans-serif;
-  max-width: 350px;
-  margin-right: auto;
-  margin-left: auto;
-  padding: 20px;
-  flex-grow: 0;
-  color: #313131;
-}
-
-.skills {
-  margin-top: 20px;
-  font-weight: 300;
-  font-size: 1.3em;
-  line-height: 2;
-}
-
+/*
 .first {
   color: #39DBFA;
 }
 
 .middle {
-  margin-top: 60px;
   color: #FF2D5E;
 }
-
-/* .sx2 {
-  color: #FF2D5E;
-} */
 
 .last {
-  margin-top: 120px;
   color: #82F927;
-}
+} */
 
-footer {
+.intro_contact {
+  display: flex;
   width: 100%;
-  height: 300px;
-  background-color: #FF2D5E;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-h1 {
-  font-size: 6rem;
+/* -------------------------------
+SERVICES CSS ONLY
+------------------------------- */
+
+.service_para {
+  width: 50%;
+  float: left;
+  font-size: 1.2rem;
+  margin-right: 50%;
 }
 
-h2 {
-  padding-top: 14px;
-  font-size: 1.75rem;
-  font-weight: bolder;
+.servicesbanner {
+  display: flex;
+  width: 100%;
+  position: relative;
+  border-bottom: dashed;
+  border-width: thin;
+  margin-bottom: 10%;
 }
 
-p {
-  font-size: 1.3em;
-  font-family: 'Josefin Sans', sans-serif;
+.skills_container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  margin: 0 auto 5rem;
+  border-bottom: dashed;
+  border-width: thin;
+}
+
+.service_flex_row {
+  width: 100%;
+}
+
+.skills {
+  margin-left: 20px;
+  padding: 20px;
+  width: 33%;
+  font-family: 'Roboto Condensed', sans-serif;
   font-weight: 300;
-  padding-top: 14px;
-  color: #313131;
-  /* text-transform: uppercase; */
+  font-size: 1.3rem;
+  color: #8B8B8B;
+  list-style-type: circle;
+  line-height: 1.5;
 }
 
 .hero2 {
@@ -169,53 +241,127 @@ p {
   z-index: 0;
 }
 
-.intro_contact {
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 200px;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  flex-direction: column;
+.link_ct {
   width: 100%;
-  padding: 20px;
+  margin: 0 auto;
   text-align: center;
-  height: 200px;
-  display: flex;
-  font-size: 2em;
-  font-family: 'Josefin Sans', sans-serif;
-  font-weight: bold;
-  vertical-align: baseline;
-  background: transparent;
-  color: #313131;
+  font-size: 4rem;
 }
 
-.footer_main {
-  display: flex;
+.link_ct:hover {
+  color: #FF2D5E;
+}
+
+/* -------------------------------
+ABOUT CSS ONLY
+------------------------------- */
+
+.about_main {
+  border-bottom: dashed;
+  border-width: thin;
+}
+
+.about_para {
+  width: 50%;
+  float: left;
+  font-size: 1.2rem;
+  margin-right: 50%;
+}
+
+.about_ct {
   width: 100%;
   margin-left: auto;
   margin-right: auto;
-  padding-left: 80px;
-  padding-right: 80px;
+}
+
+.cut_ct {
+  display: flex;
+  width: 100%;
+  /* margin: 0 auto 2rem; */
+}
+
+.mid_ct {
+  display: flex;
+  width: 100%;
+  /* margin: 0 auto 2rem; */
+}
+
+.abt_content {
+  margin: 0 8em;
+  margin-top: 2em;
+}
+
+#photo {
+  padding: 20px;
+  outline: 4px #FF2D5E;
+}
+
+.team_ct {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 4rem;
+}
+
+.abt_title {
+  margin-bottom: 1rem;
+}
+
+.about_text {
+  font-size: 1em;
+  margin-top: 2em;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 300px;
+  width: 300px;
+  opacity: 0;
+  transition: .5s ease;
+}
+
+.photo:hover .overlay {
+  opacity: 1;
+}
+
+/* -------------------------------
+CONTACT CSS ONLY
+------------------------------- */
+
+.email {
+  border-bottom: dashed;
+  border-width: thin;
+}
+
+/* -------------------------------
+FOOTER CSS ONLY
+------------------------------- */
+
+.footer_main {
+  color: #313131;
+  background-color: #F8F8F8;
+}
+
+.foot_ct {
+  display: flex;
+  width: 80%;
+  padding-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .footer_1, .footer_2 {
-  font-family: 'Josefin Sans', sans-serif;
-  font-weight: normal;
-  margin-right: auto;
+  font-family: 'Roboto Condensed', sans-serif;
+  width: 50%;
+  padding: 20px;
   margin-left: auto;
-  margin-top: 20px;
-  padding: 40px;
+  margin-right: auto;
   flex-grow: 0;
-  color: #fff;
-  flex-direction: column;
-}
-
-.footer_1 {
-  max-width: 400px;
-}
-
-.footer_2 {
-  max-width: 600px;
+  color: #313131;
 }
 
 .hire, .hire2 {
@@ -223,19 +369,28 @@ p {
 }
 
 .hire {
-  font-size: 2.2em;
+  font-size: 3rem;
   font-weight: bold;
-  margin-bottom: 20px;
+  font-family: 'Roboto Condensed', sans-serif;
 }
 
 .hire2 {
   font-size: 1.15em;
   font-weight: normal;
+  font-family: 'Roboto Condensed', sans-serif;
 }
 
 .hire2:hover {
   text-decoration: underline;
   text-decoration-color: #313131;
+}
+
+.hire_line {
+  padding-bottom: 20px;
+}
+
+.adr_lc {
+  font-family: 'Roboto Condensed', sans-serif;
 }
 
 .end {
@@ -251,7 +406,7 @@ p {
   padding: 5px 5px;
   margin-top: 14px;
   font-weight: normal;
-  font-size: 0.5em;
+  font-size: 0.7em;
   letter-spacing: 1px;
   color: #383736;
   border: 2px #383736 solid;
@@ -303,6 +458,19 @@ p {
   font-weight: bold;
 }
 
+.social_icons {
+  flex-direction: row;
+  margin-top: 20px;
+}
+
+.fa-behance, .fa-facebook, .fa-linkedin {
+  padding-right: 12px;
+}
+
+.fa-behance:hover, .fa-facebook:hover, .fa-linkedin:hover {
+  color: #FF2D5E;
+}
+
 /* -------------------------------
 SHAPES AND OTHER ELEMENTS
 --------------------------------- */
@@ -328,15 +496,15 @@ SHAPES AND OTHER ELEMENTS
 }
 
 .shape {
-  height: 300px;
-  width: 300px;
+  height: 250px;
+  width: 250px;
   background: #39DBFA;
   border-radius: 5%;
 }
 
 .shape2 {
-  height: 300px;
-  width: 300px;
+  height: 280px;
+  width: 280px;
   background-color: #67E7FF;
   border-radius: 5%;
 }
@@ -349,9 +517,37 @@ SHAPES AND OTHER ELEMENTS
 }
 
 .shape4 {
+  height: 280px;
+  width: 280px;
+  background-color: #FF537B;
+  border-radius: 5%;
+}
+
+.shape5 {
   height: 250px;
   width: 250px;
-  background-color: #FF537B;
+  background-color: #82F927;
+  border-radius: 5%;
+}
+
+.shape6 {
+  height: 280px;
+  width: 280px;
+  background-color: #A2FF5C;
+  border-radius: 5%;
+}
+
+.shape7 {
+  height: 250px;
+  width: 250px;
+  background-color: #FDC501;
+  border-radius: 5%;
+}
+
+.shape8 {
+  height: 280px;
+  width: 280px;
+  background-color: #FFD74C;
   border-radius: 5%;
 }
 
@@ -364,17 +560,17 @@ SHAPES AND OTHER ELEMENTS
 }
 
 .mousey {
-  width: 3px;
-  padding: 10px 15px;
-  height: 35px;
-  border: 2px solid #000;
+  width: 1px;
+  padding: 7px 14px;
+  height: 30px;
+  border: 1.5px solid #000;
   border-radius: 25px;
   opacity: 0.75;
   box-sizing: content-box;
 }
 
 .scroller {
-  width: 3px;
+  width: 2px;
   height: 10px;
   border-radius: 25%;
   background-color: #000;
@@ -410,7 +606,11 @@ SHAPES AND OTHER ELEMENTS
   }
   .sxcontent {
     flex-direction: column;
-    max-width: 720px;
+    max-width: 100%;
+  }
+  .first, .middle, .last {
+    margin-top: 20px;
+    width: 60%;
   }
 }
 
@@ -423,29 +623,57 @@ SHAPES AND OTHER ELEMENTS
     margin: auto;
     margin-top: 25vh;
   }
-}
-
-@media (max-width: 720px) {
-  .servicesbanner {
-    height: 600px;
-  }
-}
-
-@media (max-width: 720px) {
   .shape, .shape2 {
     display: none;
   }
-}
-
-@media (max-width: 720px) {
   .banimg {
     width: 180px;
   }
-}
-
-@media (max-width: 720px) {
   .scroll-downs {
     display: none;
+  }
+  .first, .middle, .last {
+    margin-top: 20px;
+    width: 60%;
+  }
+  .info_ctn {
+    font-size: 1rem;
+  }
+  .foot_ct {
+    flex-direction: column-reverse;
+    width: 100%;
+  }
+  .link_ct {
+    font-size: 1.9rem;
+  }
+  .unsplash_h1 {
+    font-size: 2rem;
+  }
+  .unsplash_p {
+    font-size: 1.5rem;
+  }
+  .service_para, .about_para {
+    font-size: 0.5em;
+    width: 100%;
+  }
+  .skills_container {
+    flex-direction: column;
+  }
+  .skills {
+    width: 100%;
+  }
+  .about_ct, .cut_ct {
+    flex-direction: column;
+  }
+  .abt_content {
+    width: 100%;
+    margin: auto;
+  }
+  .mid_ct {
+    flex-direction: column-reverse;
+  }
+  .footer_1, .footer_2 {
+    width: 60%;
   }
 }
 
@@ -455,40 +683,29 @@ SHAPES AND OTHER ELEMENTS
   }
 }
 
-@media (max-width: 1040px) {
+@media (max-width: 960px) {
   .first, .middle, .last {
     margin-top: 20px;
-    width: 60%;
   }
-  @media (max-width: 720px) {
-    .first, .middle, .last {
-      margin-top: 20px;
-      width: 60%;
-    }
-    .info_ctn {
-      font-size: 1rem;
-    }
+}
+
+@media (max-width: 640px) {
+  .hire, .hire2 {
+    text-align: left;
   }
-  @media (max-width: 960px) {
-    .first, .middle, .last {
-      margin-top: 20px;
-    }
+  .intro_contact {
+    font-size: 1.5rem;
   }
-  @media (max-width: 640px) {
-    .footer_main {
-      height: 100%;
-      flex-direction: column-reverse;
-      padding-left: 20px;
-      padding-right: 20px;
-    }
+  main {
+    margin-top: 20%;
   }
-  @media (max-width: 640px) {
-    .hire, .hire2 {
-      text-align: left;
-    }
+  h1 {
+    font-size: 3rem;
   }
-  @media (max-width: 640px) {
-    .intro_contact {
-      font-size: 1.5em;
-    }
+  p {
+    font-size: 1.8rem;
   }
+  .hire {
+    font-size: 2rem;
+  }
+}
