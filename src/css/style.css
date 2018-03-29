@@ -6,7 +6,9 @@
 
 */
 
-*, ::before, ::after {
+*,
+::before,
+::after {
   box-sizing: inherit;
   margin: 0;
   padding: 0;
@@ -152,7 +154,9 @@ HOME CSS ONLY
   border-width: thin;
 }
 
-.first, .middle, .last {
+.first,
+.middle,
+.last {
   font-family: 'Roboto Condensed', sans-serif;
   width: 20%;
   padding-right: 50px;
@@ -354,7 +358,8 @@ FOOTER CSS ONLY
   margin-right: auto;
 }
 
-.footer_1, .footer_2 {
+.footer_1,
+.footer_2 {
   font-family: 'Roboto Condensed', sans-serif;
   width: 50%;
   padding: 20px;
@@ -364,7 +369,8 @@ FOOTER CSS ONLY
   color: #313131;
 }
 
-.hire, .hire2 {
+.hire,
+.hire2 {
   text-align: left;
 }
 
@@ -463,11 +469,15 @@ FOOTER CSS ONLY
   margin-top: 20px;
 }
 
-.fa-behance, .fa-facebook, .fa-linkedin {
+.fa-behance,
+.fa-facebook,
+.fa-linkedin {
   padding-right: 12px;
 }
 
-.fa-behance:hover, .fa-facebook:hover, .fa-linkedin:hover {
+.fa-behance:hover,
+.fa-facebook:hover,
+.fa-linkedin:hover {
   color: #FF2D5E;
 }
 
@@ -475,7 +485,8 @@ FOOTER CSS ONLY
 SHAPES AND OTHER ELEMENTS
 --------------------------------- */
 
-.circle, .circle2 {
+.circle,
+.circle2 {
   height: 50px;
   width: 50px;
   background-color: #39DBFA;
@@ -608,14 +619,17 @@ SHAPES AND OTHER ELEMENTS
     flex-direction: column;
     max-width: 100%;
   }
-  .first, .middle, .last {
+  .first,
+  .middle,
+  .last {
     margin-top: 20px;
     width: 60%;
   }
 }
 
 @media (max-width: 720px) {
-  .hero, .hero2 {
+  .hero,
+  .hero2 {
     font-size: 2em;
     max-width: 720px;
     padding-left: 20px;
@@ -623,7 +637,8 @@ SHAPES AND OTHER ELEMENTS
     margin: auto;
     margin-top: 25vh;
   }
-  .shape, .shape2 {
+  .shape,
+  .shape2 {
     display: none;
   }
   .banimg {
@@ -632,7 +647,9 @@ SHAPES AND OTHER ELEMENTS
   .scroll-downs {
     display: none;
   }
-  .first, .middle, .last {
+  .first,
+  .middle,
+  .last {
     margin-top: 20px;
     width: 60%;
   }
@@ -652,7 +669,8 @@ SHAPES AND OTHER ELEMENTS
   .unsplash_p {
     font-size: 1.5rem;
   }
-  .service_para, .about_para {
+  .service_para,
+  .about_para {
     font-size: 0.5em;
     width: 100%;
   }
@@ -662,7 +680,8 @@ SHAPES AND OTHER ELEMENTS
   .skills {
     width: 100%;
   }
-  .about_ct, .cut_ct {
+  .about_ct,
+  .cut_ct {
     flex-direction: column;
   }
   .abt_content {
@@ -672,7 +691,8 @@ SHAPES AND OTHER ELEMENTS
   .mid_ct {
     flex-direction: column-reverse;
   }
-  .footer_1, .footer_2 {
+  .footer_1,
+  .footer_2 {
     width: 60%;
   }
 }
@@ -684,13 +704,16 @@ SHAPES AND OTHER ELEMENTS
 }
 
 @media (max-width: 960px) {
-  .first, .middle, .last {
+  .first,
+  .middle,
+  .last {
     margin-top: 20px;
   }
 }
 
 @media (max-width: 640px) {
-  .hire, .hire2 {
+  .hire,
+  .hire2 {
     text-align: left;
   }
   .intro_contact {
@@ -708,4 +731,22 @@ SHAPES AND OTHER ELEMENTS
   .hire {
     font-size: 2rem;
   }
+}
+
+@media(max-width: 500px) {
+  .unsplash {
+    background: #c0c0c0 url(../images/sabrituzcu.jpg) no-repeat center;
+    background-size: cover;
+    padding-top: 5rem;
+  }
+  .unsplash_image {
+    display: none;
+  }
+  .unsplash_title {
+    position: relative;
+  }
+}
+
+.unsplash_title {
+  text-shadow: 0 0 6px rgba(0, 0, 0, .5);
 }
